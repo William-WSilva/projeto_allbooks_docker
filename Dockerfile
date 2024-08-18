@@ -7,9 +7,6 @@ WORKDIR /app
 # Copie o arquivo package.json e package-lock.json (se existir) para o contêiner
 COPY package*.json ./
 
-# Atualize as dependências 'ajv' e 'ajv-keywords'
-RUN npm update ajv ajv-keywords
-
 # Instale todas as dependências
 RUN npm install --production
 
