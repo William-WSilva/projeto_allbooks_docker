@@ -1,6 +1,23 @@
+# Use uma imagem base do Node.js mais recente e estável
 FROM node:20
+
+# Defina o diretório de trabalho dentro do contêiner
 WORKDIR /app
-COPY package.json .
-RUN npm install
+
+# Copie o arquivo package.json e package-lock.json (se existir) para o contêiner
+COPY package*.json ./
+
+# Atualize as dependências 'ajv' e 'ajv-keywords'
+RUN npm update ajv ajv-keywords
+
+# Instale todas as dependências
+RUN npm install --production
+
+# Copie o restante dos arquivos da aplicação para o contêiner
 COPY . .
-ENTRYPOINT npm start
+
+# Exponha a porta que a aplicação vai usar
+EXPOSE 3000
+
+# Comando padrão para iniciar a aplicação
+CMD ["npm", "start"]
