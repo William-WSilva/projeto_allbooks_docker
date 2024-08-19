@@ -29,25 +29,30 @@ Para facilitar a execução do projeto, fornecemos uma configuração Docker. Si
 
 ### **Pré-requisitos**
 
-Certifique-se de ter o [Docker](https://docs.docker.com/get-docker/) instalado em sua máquina.
+Certifique-se de ter o [Docker](https://www.docker.com/products/docker-desktop/) instalado e executando.
 
 ### **Instruções**
 
-1. **Clone o Repositório:**
+#### Clone o Repositório:
    ```bash
-   git clone https://github.com/William-WSilva/projeto_allbooks_docker.git
-   cd projeto_allbooks_docker
+git clone https://github.com/William-WSilva/projeto_allbooks_docker.git
+```
+#### Acesse a pasta do projeto:
+   ```bash
+cd projeto_allbooks_docker
+```
 
-### Construir a Imagem Docker:
+
+#### Construir a Imagem Docker:
  ```bash 
-    docker build -t alurabooks .
+docker build -t alurabooks .
 ```
 
 ### Executar o Contêiner Docker:
  ```bash
-    docker run -p 3000:3000 alurabooks
+docker run -d -p 3000:3000 alurabooks
 ```
 
 Isso inicia um contêiner a partir da imagem alurabooks e mapeia a porta 3000 do contêiner para a porta 3000 da sua máquina local.
 
-Acessar Aplicação em: http://localhost:3000/
+Acesse a aplicação em: http://localhost:3000
