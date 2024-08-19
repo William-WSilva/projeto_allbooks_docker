@@ -8,33 +8,46 @@ O AluraBooks é uma loja virtual que vende livros da Casa do Código.
 <img src="screencapture.png" alt="Imagem do AluraBooks" width="50%">
 
 
-## 🔨 Funcionalidades do projeto
+## Funcionalidades do Projeto
 
-O AluraBooks começa com a página inicial já pronta, que você pode baixar e utilizar ou então... criar a sua versão baseada <a href="https://www.figma.com/file/POpX503Kobu83iGdiaICvk/React%3A-Alura-Books?node-id=119%3A3145" target="_blank">no figma</a>.
-No decorrer da formação nós vamos implementar toda a camada de comunicação com a API, inclusive a autenticação.
+O AluraBooks começa com a página inicial já pronta, que você pode baixar e utilizar ou então... criar a sua versão baseada no Figma. No decorrer da formação, implementaremos toda a camada de comunicação com a API, incluindo a autenticação.
 
-## ✔️ Técnicas e tecnologias utilizadas
+✔️ **Técnicas e Tecnologias Utilizadas:**
+- React
+- Docker
+- React Hooks
+- TypeScript
+- axios
+- Session Storage
+- TSDX
+- NPM
+- Github Actions
 
-Se liga nessa lista de tudo que usaremos nessa formação:
+## 🛠️ Como Rodar o Projeto com Docker
 
-- `React`
-- `React Hooks`
-- `TypeScript`
-- `axios`
-- `Session Storage`
-- `TSDX`
-- `NPM` (no primeiro curso nós criamos uma biblioteca e a publicamos no NPM)
-- `Github Actions`
+Para facilitar a execução do projeto, fornecemos uma configuração Docker. Siga os passos abaixo para construir e executar o contêiner Docker:
 
-E muito mais!
+### **Pré-requisitos**
 
-## 🛠️ Abrir e rodar o projeto
+Certifique-se de ter o [Docker](https://docs.docker.com/get-docker/) instalado em sua máquina.
 
-Para abrir e rodar o projeto, execute `npm i` para instalar as dependências e `npm start` para inicar o projeto.
+### **Instruções**
 
-Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no seu navegador.
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/William-WSilva/projeto_allbooks_docker.git
+   cd projeto_allbooks_docker
 
-## 📚 Mais informações do curso
+### Construir a Imagem Docker:
+ ```bash 
+    docker build -t alurabooks .
+```
 
-O AluraBooks é o projeto utilizado durante toda a formação, e você pode navegar entre as branchs para encontrar o momento específico que está buscando.# projeto_allbooks_docker
+### Executar o Contêiner Docker:
+ ```bash
+    docker run -p 3000:3000 alurabooks
+```
 
+Isso inicia um contêiner a partir da imagem alurabooks e mapeia a porta 3000 do contêiner para a porta 3000 da sua máquina local.
+
+Acessar Aplicação em: http://localhost:3000/
