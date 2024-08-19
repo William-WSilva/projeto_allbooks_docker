@@ -1,6 +1,6 @@
-![Integrando seu projeto React com APIs](thumbnail.png)
-
 # AluraBooks
+
+![Integrando seu projeto React com APIs](thumbnail.png)
 
 O AluraBooks é uma loja virtual que vende livros da Casa do Código. 
 É um MVP que tá só começando e ainda tem muitas funcionalidades novas para serem desenvolvidas.
@@ -37,4 +37,4 @@ Depois, acesse <a href="http://localhost:3000/">http://localhost:3000/</a> no se
 ## 📚 Mais informações do curso
 
 O AluraBooks é o projeto utilizado durante toda a formação, e você pode navegar entre as branchs para encontrar o momento específico que está buscando.# projeto_allbooks_docker
-# projeto_allbooks_docker
+
