@@ -31,7 +31,7 @@ Para facilitar a execução do projeto, fornecemos uma configuração Docker. Si
 
 Certifique-se de ter o [Docker](https://www.docker.com/products/docker-desktop/) instalado e executando.
 
-### **Instruções**
+### **Instruções para executar no terminal**
 
 #### Clone o Repositório:
    ```bash
